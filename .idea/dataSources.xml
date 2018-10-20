@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="e40acfc7-8124-4a5f-a846-494d2b52ac0a">
+    <data-source source="LOCAL" name="db" uuid="4fbc0b97-5412-4628-9bee-51c4bacc8d60">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:E:\Workspaces\pycharm\djangoboards\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:F:\Workspaces\Repositories\djangoboard\db.sqlite3</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>
