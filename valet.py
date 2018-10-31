@@ -1,157 +1,65 @@
 import argparse
 import os
-import pickle
-import webbrowser
-
-ROOT_DIR = os.path.abspath(os.path.dirname(__file__))
-DATABASE = 'valet.prop'
-prop = {}
+import sys
 
 
-def singleton(klaz):
-    import functools
-    inst = {}
-    functools.wraps(klaz)
+class BaseCommand:
+    _help = ''
 
-    def new_function(*arg, **kwargs):
-        if klaz not in inst:
-            inst[klaz] = klaz(*arg, **kwargs)
-        return inst[klaz]
+    def create_parser(self, prog_name, sub_cmd):
+        parser = argparse.ArgumentParser(
+            prog='{} {}'.format(os.path.basename(prog_name), sub_cmd),
+            description=self._help or None,
+        )
 
-    return new_function
+        self.add_args(parser)
+        return parser
+
+    def add_args(self, parser):
+        pass
+
+    def run(self, argv):
+        parser = self.create_parser(argv[0], argv[1])
+        options = parser.parse_args(argv[2:])
+        options_cmd = vars(options)
+        args = options_cmd.pop('args', ())
+        self.handle(*args, **options_cmd)
+
+    def handle(self, *args, **kwargs):
+        raise NotImplementedError('Subclasses of BaseCommand must provide a handle() method')
 
 
-def parse(args):
-    delimiter = '='
-    arr = {}
-    for elem in args:
-        if delimiter in elem:
-            key_val = elem.split(delimiter, 1)
-            arr[key_val[0]] = key_val[1]
-    return arr
+class Newfile(BaseCommand):
+    def add_args(self, parser):
+        parser.add_argument('outfile')
+        parser.add_argument('-at', '--path')
+
+    def handle(self, *args, **kwargs):
+        outfile = kwargs.pop('outfile')
+        pkg = kwargs.pop('path').replace('.', '\\')
+
+        assert outfile is not None and pkg is not None, "Outfile or path not found"
+
+        file_dir = os.path.join(sys.path[0], pkg)
+        if not os.path.isdir(file_dir):
+            raise '"{}" not found.'.format(file_dir)
+
+        filepath = os.path.join(file_dir, outfile)
+        if os.path.isfile(filepath):
+            raise '"{}" exists ready.'.format(filepath)
+
+        open(os.path.join(file_dir, outfile), 'w').close()
 
 
-# Load & Save Properties
-def load_prop():
-    global prop
+def execute_from_argv():
     try:
-        fopen = open(DATABASE, 'rb')
-        prop = pickle.load(fopen)
-        fopen.close()
-    except:
-        save_prop()
+        sub_cmd = sys.argv[1]
+    except IndexError:
+        sub_cmd = 'help'
 
-
-def save_prop():
-    fopen = open(DATABASE, 'wb')
-    pickle.dump(prop, fopen)
-    fopen.close()
-
-
-@singleton
-class InputOption:
-    def setup(self, args):
-        if args is None:
-            return
-        self.__dict__.update(parse(args))
-
-
-# Commands
-def forget(args):
-    global prop
-    prop = {}
-    save_prop()
-
-
-def arrive():
-    print(prop)
-
-
-def test():
-    prop['path'] = ROOT_DIR
-
-
-def new():
-    desc = "Usage: valet new -d name"
-    option = InputOption()
-
-    assert hasattr(option, 'name'), '\n'.join(['Output File not yet named.', desc])
-
-    path = prop.get('path')
-
-    f_name = getattr(option, 'name')
-
-    f_name = '.'.join([f_name, 'py']) if '.' not in f_name else f_name
-    f_path = os.path.join(path, f_name)
-
-    if os.path.exists(f_path):
-        print('{0} is already exist.'.format(f_name))
-        return
-
-    open(f_path, 'w').close()
-    prop['path'] = path
-
-
-def clone():
-    desc = "Usage: valet clone -d from name"
-    option = InputOption()
-
-    assert hasattr(option, 'from'), '\n'.join(["Nothing to clone", desc])
-    assert hasattr(option, 'name'), '\n'.join(["Output File not yet named.", desc])
-
-    path = prop.get('path')
-
-    origin = getattr(option, 'from')
-
-    if not os.path.exists(os.path.join(path, origin)):
-        raise Exception('Parent not found.')
-
-    ins = open(os.path.join(path, origin), 'r')
-    contents = ins.readlines()
-    ins.close()
-
-    target = getattr(option, 'name')
-    outs = open(os.path.join(path, target), 'w')
-    outs.writelines(contents)
-    outs.close()
-
-
-def listdir():
-    desc = "Usage: valet listdir"
-    path = prop.get('path')
-
-    print(path)
-    for dir in os.listdir(path):
-        print(dir)
-
-
-#  Main
-def main():
-    try:
-        parser = argparse.ArgumentParser(prog='tutorial')
-        parser.add_argument('command', help='Command helper',
-                            choices=['forget', 'new', 'clone', 'listdir', 'arrive', 'test', ])
-        parser.add_argument('-d', '--data', help='data helper', nargs='*', default=None)
-        parser.add_argument('-at', '--path', default=None)
-        args = parser.parse_args()
-        method = args.command
-
-        load_prop()
-
-        path = prop.get('path') if args.path is None else os.path.join(ROOT_DIR, args.path)
-        assert os.path.isdir(path), '"{}" not found.'.format(path)
-        prop['path'] = path
-
-        option = InputOption()
-        option.setup(args.data)
-
-        globals()[method]()
-
-        save_prop()
-
-    except Exception as e:
-        print('Error: ', e)
+    cmd = globals()[sub_cmd.capitalize()]()
+    cmd.run(sys.argv)
 
 
 if __name__ == '__main__':
-    main()
+    execute_from_argv()
