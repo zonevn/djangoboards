@@ -2,37 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57f6ac65-e213-4d8b-b892-d074e22fab8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Victor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/tests/test_mail_password_reset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/tests/test_view_password_change.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/tests/test_view_password_reset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boards/migrations/0003_topic_views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boards/tests/test_view_board_topics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boards/tests/test_view_home.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boards/tests/test_view_new_topic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boards/tests/test_view_reply_topic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boards/tests/test_view_topic_posts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/avatar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/password_change.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/password_change_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/reply_topic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/topic_posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/djangoboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoboard.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boards/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/boards/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boards/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/boards/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boards/tests/test_view_home.py" beforeDir="false" afterPath="$PROJECT_DIR$/boards/tests/test_view_home.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boards/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/boards/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoboard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoboard/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoboard/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_subject.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_subject.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/topics.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/topics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/valet.py" beforeDir="false" afterPath="$PROJECT_DIR$/valet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/topic_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/topic_posts.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,6 +127,38 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1554420114">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="3" />
+          <entry key="py" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="3" />
+          <entry key="Python" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="436" />
+          <entry key="py" value="1444" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="436" />
+          <entry key="Python" value="1444" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="djangoboard" />
@@ -159,32 +168,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boards/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            <state relative-caret-position="288">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
+                <marker date="1541047129856" expanded="true" signature="516:1190" ph="..." />
+                <marker date="1541047129856" expanded="true" signature="687:813" ph="..." />
+                <marker date="1541047129856" expanded="true" signature="1103:1190" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/djangoboard/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39">
+              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+              <folding>
+                <element signature="e#635#667#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/topics.html">
+        <entry file="file://$PROJECT_DIR$/boards/tests/test_view_home.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            <state relative-caret-position="304">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boards/models.py">
+        <entry file="file://$PROJECT_DIR$/djangoboard/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="120" selection-start-line="120" selection-end-line="120" />
             </state>
           </provider>
         </entry>
@@ -238,25 +262,27 @@
         <option value="$PROJECT_DIR$/templates/password_reset_confirm.html" />
         <option value="$PROJECT_DIR$/templates/password_reset_complete.html" />
         <option value="$PROJECT_DIR$/accounts/tests/test_view_password_reset.py" />
-        <option value="$PROJECT_DIR$/djangoboard/settings.py" />
         <option value="$PROJECT_DIR$/templates/password_change.html" />
         <option value="$PROJECT_DIR$/templates/password_change_done.html" />
         <option value="$PROJECT_DIR$/accounts/tests/test_view_password_change.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/boards/tests/test_view_home.py" />
         <option value="$PROJECT_DIR$/boards/tests/test_view_board_topics.py" />
         <option value="$PROJECT_DIR$/boards/tests/test_view_new_topic.py" />
         <option value="$PROJECT_DIR$/boards/tests/test_view_topic_posts.py" />
-        <option value="$PROJECT_DIR$/djangoboard/urls.py" />
         <option value="$PROJECT_DIR$/boards/forms.py" />
         <option value="$PROJECT_DIR$/templates/reply_topic.html" />
-        <option value="$PROJECT_DIR$/templates/topic_posts.html" />
         <option value="$PROJECT_DIR$/valet.py" />
         <option value="$PROJECT_DIR$/boards/tests/test_view_reply_topic.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/boards/models.py" />
-        <option value="$PROJECT_DIR$/boards/views.py" />
         <option value="$PROJECT_DIR$/templates/topics.html" />
+        <option value="$PROJECT_DIR$/templates/topic_posts.html" />
+        <option value="$PROJECT_DIR$/templates/edit_post.html" />
+        <option value="$PROJECT_DIR$/djangoboard/settings.py" />
+        <option value="$PROJECT_DIR$/boards/tests/test_view_edit_post.py" />
+        <option value="$PROJECT_DIR$/boards/views.py" />
+        <option value="$PROJECT_DIR$/djangoboard/urls.py" />
+        <option value="$PROJECT_DIR$/boards/tests/test_view_home.py" />
       </list>
     </option>
   </component>
@@ -296,40 +322,45 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="djangoboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoboard" type="462c0819:PsiDirectoryNode" />
+              <item name="djangoboards" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoboards" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="djangoboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoboard" type="462c0819:PsiDirectoryNode" />
+              <item name="djangoboards" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoboards" type="462c0819:PsiDirectoryNode" />
               <item name="boards" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="djangoboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoboard" type="462c0819:PsiDirectoryNode" />
+              <item name="djangoboards" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoboards" type="462c0819:PsiDirectoryNode" />
               <item name="boards" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangoboards" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoboards" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="topics&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/topics.html&#10;views&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/boards/views.py&#10;models&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/boards/models.py&#10;urls&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/djangoboard/urls.py&#10;home.h&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/home.html&#10;valet&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/valet.py&#10;reply&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/reply_topic.html&#10;form&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/boards/forms.py&#10;settings&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/djangoboard/settings.py&#10;topic_posts&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/topic_posts.html&#10;test_view_topic_po&#9;null&#9;null&#10;topic_&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/topic_posts.html&#10;topic_po&#9;null&#9;null&#10;url&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/djangoboard/urls.py&#10;Boar&#9;null&#9;null&#10;test_view_b&#9;null&#9;null&#10;test_view_new&#9;null&#9;null&#10;login&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/login.html&#10;setting&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/djangoboard/settings.py&#10;pass&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/venv/Lib/site-packages/django/contrib/admin/templates/registration/password_reset_complete.html&#10;test&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/accounts/tests/test_view_password_reset.py&#10;sett&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/djangoboard/settings.py&#10;password_reset_co&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/password_reset_confirm.html&#10;test_view&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/accounts/tests/test_view_password_reset.py&#10;password_reset_&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/password_reset_done.html&#10;maste&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/master_accounts.html&#10;mas&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/master_accounts.html&#10;test_t&#9;null&#9;null&#10;form_&#9;null&#9;null&#10;si&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/signup.html&#10;master&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/master_accounts.html&#10;master_&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/master_accounts.html&#10;login.&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/login.html&#10;sign&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/signup.html&#10;setti&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/djangoboard/settings.py&#10;acc&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/static/css/accounts.css&#10;templates/s&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/signup.html" />
+    <property name="SearchEverywhereHistoryKey" value="urls&#9;FILE&#9;file://E:/Workspaces/pycharm/djangoboards/djangoboard/urls.py&#10;view&#9;FILE&#9;file://E:/Workspaces/pycharm/djangoboards/boards/views.py&#10;settin&#9;FILE&#9;file://E:/Workspaces/pycharm/djangoboards/djangoboard/settings.py&#10;test_e&#9;null&#9;null&#10;edit_post&#9;FILE&#9;file://E:/Workspaces/pycharm/djangoboards/templates/edit_post.html&#10;topic_&#9;FILE&#9;file://E:/Workspaces/pycharm/djangoboards/templates/topic_posts.html&#10;topics&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/topics.html&#10;views&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/boards/views.py&#10;models&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/boards/models.py&#10;home.h&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/home.html&#10;valet&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/valet.py&#10;reply&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/reply_topic.html&#10;form&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/boards/forms.py&#10;settings&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/djangoboard/settings.py&#10;topic_posts&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/topic_posts.html&#10;test_view_topic_po&#9;null&#9;null&#10;topic_po&#9;null&#9;null&#10;url&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/djangoboard/urls.py&#10;Boar&#9;null&#9;null&#10;test_view_b&#9;null&#9;null&#10;test_view_new&#9;null&#9;null&#10;login&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/login.html&#10;setting&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/djangoboard/settings.py&#10;pass&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/venv/Lib/site-packages/django/contrib/admin/templates/registration/password_reset_complete.html&#10;test&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/accounts/tests/test_view_password_reset.py&#10;sett&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/djangoboard/settings.py&#10;password_reset_co&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/password_reset_confirm.html&#10;test_view&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/accounts/tests/test_view_password_reset.py&#10;password_reset_&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/password_reset_done.html&#10;maste&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/master_accounts.html&#10;mas&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/master_accounts.html&#10;test_t&#9;null&#9;null&#10;form_&#9;null&#9;null&#10;si&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/signup.html&#10;master&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/master_accounts.html&#10;master_&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/master_accounts.html&#10;login.&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/login.html&#10;sign&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/signup.html&#10;setti&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/djangoboard/settings.py&#10;acc&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/static/css/accounts.css&#10;templates/s&#9;FILE&#9;file://F:/Workspaces/Repositories/djangoboard/templates/signup.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -355,7 +386,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="djangoboard" type="Python.DjangoServer" factoryName="Django server">
+    <configuration name="Django" type="Python.DjangoServer" factoryName="Django server">
       <module name="djangoboard" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -363,9 +394,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="djangoboard.settings" />
       </envs>
-      <option name="SDK_HOME" value="F:\Workspaces\Repositories\djangoboard\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <module name="djangoboard" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -381,6 +435,7 @@
     </configuration>
   </component>
   <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
     <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
   </component>
   <component name="SvnConfiguration">
@@ -449,23 +504,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-4" y="-4" width="1032" height="732" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44427" visible="true" weight="0.23294243" />
-      <window_info id="Structure" order="1" sideWeight="0.55573" side_tool="true" visible="true" weight="0.23294243" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44221106" visible="true" weight="0.23727088" />
+      <window_info id="Structure" order="1" sideWeight="0.55778897" side_tool="true" visible="true" weight="0.23727088" />
       <window_info id="Favorites" order="2" sideWeight="0.5517799" side_tool="true" weight="0.22547974" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32952693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.30911064" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.30831975" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" x="29" y="291" width="1876" height="324" id="Terminal" order="11" weight="0.35140997" />
+      <window_info active="true" anchor="bottom" x="29" y="291" width="1876" height="324" id="Terminal" order="11" visible="true" weight="0.35073408" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329718" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -489,27 +545,6 @@
     <option name="LAST_COMMIT_MESSAGE" value=" learning part 4" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boards/templatetags/form_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boards/tests/test_templatetags.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -698,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/djangoboard/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boards/tests/test_view_topic_posts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -726,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/topic_posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boards/tests/test_view_reply_topic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -746,7 +767,6 @@
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <marker date="1540737248141" expanded="true" signature="440:445" ph="..." />
           </folding>
         </state>
       </provider>
@@ -786,60 +806,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boards/tests/test_view_home.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoboard/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-          <folding>
-            <element signature="e#635#667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boards/tests/test_view_board_topics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_topic.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/boards/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="335">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boards/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/topics.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="160">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/topic_posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="38" column="80" lean-forward="true" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/edit_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoboard/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boards/tests/test_view_edit_post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
+            <marker date="1541046391332" expanded="true" signature="196:201" ph="..." />
+            <marker date="1541046391332" expanded="true" signature="925:930" ph="..." />
+            <marker date="1541046391332" expanded="true" signature="1211:1216" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/topics.html">
+    <entry file="file://$PROJECT_DIR$/boards/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        <state relative-caret-position="288">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+            <marker date="1541047129856" expanded="true" signature="516:1190" ph="..." />
+            <marker date="1541047129856" expanded="true" signature="687:813" ph="..." />
+            <marker date="1541047129856" expanded="true" signature="1103:1190" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoboard/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="e#635#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boards/tests/test_view_home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

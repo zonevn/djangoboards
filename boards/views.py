@@ -1,11 +1,39 @@
 from django.contrib.auth.decorators import login_required
-from django.db.models import Count
+from django.db.models import Count, QuerySet
 from django.shortcuts import render, get_object_or_404, redirect
 
 # Create your views here.
+from django.utils import timezone
+from django.utils.decorators import method_decorator
+from django.views.generic import UpdateView, ListView
+
 from boards.forms import NewTopicForm, PostForm
 from boards.models import Board, Topic, Post
 
+
+@method_decorator(login_required, name='dispatch')
+class PostUpdateView(UpdateView):
+    model = Post
+    fields = ('message',)
+    template_name = 'edit_post.html'
+    pk_url_kwarg = 'post_pk'
+    context_object_name = 'post'
+
+    def get_queryset(self):
+        queryset = super().get_queryset()  # type:QuerySet
+        return queryset.filter(created_by=self.request.user)
+
+    def form_valid(self, form):
+        post = form.save(commit=False)
+        post.updated_by = self.request.user
+        post.updated_at = timezone.now()
+        post.save()
+        return redirect('topic_posts', pk=post.topic.board.pk, topic_pk=post.topic.pk)
+
+class BoardListView(ListView):
+    model = Board
+    context_object_name = 'boards'
+    template_name = 'home.html'
 
 def home(request):
     boards = Board.objects.all()
