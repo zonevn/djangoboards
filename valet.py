@@ -42,11 +42,11 @@ class Newfile(BaseCommand):
 
         file_dir = os.path.join(sys.path[0], pkg)
         if not os.path.isdir(file_dir):
-            raise '"{}" not found.'.format(file_dir)
+            raise Exception('"{}" not found.'.format(file_dir))
 
         filepath = os.path.join(file_dir, outfile)
         if os.path.isfile(filepath):
-            raise '"{}" exists ready.'.format(filepath)
+            raise Exception('"{}" exists ready.'.format(filepath))
 
         open(os.path.join(file_dir, outfile), 'w').close()
 
@@ -56,9 +56,11 @@ def execute_from_argv():
         sub_cmd = sys.argv[1]
     except IndexError:
         sub_cmd = 'help'
-
-    cmd = globals()[sub_cmd.capitalize()]()
-    cmd.run(sys.argv)
+    try:
+        cmd = globals()[sub_cmd.capitalize()]()
+        cmd.run(sys.argv)
+    except Exception as e:
+        print(e)
 
 
 if __name__ == '__main__':
