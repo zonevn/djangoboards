@@ -8,4 +8,4 @@ venv/
 *.sqlite3
 
 # JetBrain: User-specific stuff
-.idea/**/workspace
+.idea/**/workspace.xml
