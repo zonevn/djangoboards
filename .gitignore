@@ -6,3 +6,6 @@ venv/
 # SQLite database files
 
 *.sqlite3
+
+# JetBrain: User-specific stuff
+.idea/**/workspace
